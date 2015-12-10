@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LifeTrack</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="LicensePath">/sdcard/SuperMap2015/license/</string>
+    <string name="TemporaryPath">/sdcard/SuperMap2015/temp/</string>
+    <string name="WebCacheDirectory">/sdcard/SuperMap2015/WebCache/</string>
+    <string name="DataPath">/sdcard/SuperMap2015/data/</string>
+    
+    <string name="login_account">登陆账号</string>
+    <string name="primary_page">首页</string>
+    <string name="discovery_page">发现</string>
+    <string name="collection_page">收藏</string>
+    <string name="message_page">消息</string>
+    <string name="more_page">更多</string>
+   
+	<string name="login_label_username">帐号</string>  
+    <string name="login_label_password">密码</string>  
+    <string name="login_passwords_hint">长度至少6位，无空格</string>  
+    <string name="logon_username_hint">给自己起个昵称吧</string>
+    <string name="login_label_signin">登 录</string> 
+    <string name="login_label_ok">确认</string>  
+    <string name="login_username_hint">您的账号昵称</string>  
+    <string name="login_register_link">没有帐号？ <a href="#" mce_href="#">注册</a></string>
+    <string name="Remember">记住密码</string>
+    <string name="register">注册</string>    
+    <string name="register_by_tel">手机号快速注册</string>
+    <string name="telphone">手机</string>
+    <string name="tel_input_hint">请输入您的手机号码</string>
+    <string name="passwords_visiable">显示</string>
+    <string name="pin">验证码</string>
+    <string name="pin_hint">请输入验证码</string>
+    <string name="pin_get">获取验证码</string>
+    <string name="agreeable">我非常同意</string>
+    <string name="user_registration_protocol">用户注册协议</string>
+    
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">暂无更新</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">已无更多数据</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="loading">正在加载...</string>
+
+    <string name="selection">选中%s个</string>
+    <string name="select_all">全选</string>
+    <string name="unselect_all">全不选</string>
+    <string name="text_location">定位</string>
+    <string name="text_upload">上传</string>
+    <string name="text_traj">轨迹</string>
+    <string name="text_more">\t\t\t\t\t\t更\t\t多</string>
+    <string name="text_trajnotebook">轨迹日记</string>
+    <string name="text_addaccount">添加账号</string>
+    <string name="text_scan">扫一扫</string>
+    <string name="text_browsehistory">浏览历史</string>
+    <string name="text_privatesettings">个人隐私设置</string>
+    <string name="text_trajarround">附近热门轨迹</string>
+    <string name="text_clearCache">清理缓存</string>
+    <string name="text_updateversion">版本更新</string>
+    <string name="text_feedback">意见反馈</string>
+    <string name="text_recommendtofriends">推荐给微信好友</string>
+    <string name="text_applike">您可能喜欢的应用</string>
+    <string name="text_aboutus">关于我们</string>
+    <string name="text_servicecall">客服电话</string>
+    <string name="text_servicecallnumber">400-820-5527</string>
+    <string name="text_cachesize">2.75M</string>
+    <string name="text_search">搜索</string>
+    <string name="text_exit">退出</string>
+    <string name="text_dot">.</string>
+</resources>

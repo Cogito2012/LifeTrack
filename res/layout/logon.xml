@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f3f2"
+    android:orientation="vertical" >
+
+    <!-- 标题栏布局 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dip"
+        android:layout_gravity="center"
+        android:background="#007DFF" >
+        
+        <TextView
+            android:id="@+id/register_phone_login"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/register_by_tel"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- 手机号填写栏布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/update_password_item_bg_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:text="@string/telphone"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+        <EditText
+            android:id="@+id/edit_phone_user"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:hint="@string/tel_input_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <!-- 用户名填写布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/update_password_item_bg_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:text="@string/login_label_username"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/logon_edit_username"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:hint="@string/logon_username_hint"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+    
+    <!-- 密码填写布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/update_password_item_bg_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:text="@string/login_label_password"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/edit_phone_pwd"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:hint="@string/login_passwords_hint"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+        
+        <Button
+            android:id="@+id/btn_reister_show_password"
+            android:layout_width="45dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="3dip"
+            android:background="@drawable/btn_pin_selector"
+            android:text="@string/passwords_visiable"
+            android:textColor="#454545"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 验证码布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/update_password_item_bg_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dip"
+            android:text="@string/pin"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+
+        <EditText
+            android:id="@+id/edit_pincode"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="3"
+            android:background="@android:color/white"
+            android:hint="@string/pin_hint"
+            android:inputType="phone"
+            android:maxLength="6"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="#555555"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/btn_reister_getphone_pin"
+            android:layout_width="90dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="3dip"
+            android:background="@drawable/btn_pin_selector"
+            android:text="@string/pin_get"
+            android:textColor="#454545"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 用户注册协议提醒布局 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/register_check_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:checked="true"
+            android:text="@string/agreeable"
+            android:textColor="#c0c0c0"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:text=""
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/register_txt_treaty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_registration_protocol"
+            android:textColor="#338CD7"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- 注册按钮 -->
+    <Button
+        android:id="@+id/register_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/background_login_button"
+        android:text="@string/register"
+        android:textColor="#FFFDFB"
+        android:textSize="20sp" />
+    
+
+</LinearLayout>

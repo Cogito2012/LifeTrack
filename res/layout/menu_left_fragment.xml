@@ -1,0 +1,64 @@
+<com.jeremyfeinstein.slidingmenu.lib.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/menu_avatar_b">
+	        
+            <ImageView
+	            android:layout_width="60dp"
+	      		android:layout_height="60dp"
+	      		android:layout_gravity="center"/>
+            
+	        <com.example.utils.CircularImage  
+	            android:id="@+id/btn_head_avater"
+	            android:layout_width="55dp"
+	            android:layout_height="55dp" 
+	            android:layout_marginLeft="20dp"
+	            android:layout_gravity="center"
+	            android:layout_centerVertical="true"/>
+
+	        <TextView
+	            android:id="@+id/btn_head_login"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="25dp"
+	            android:layout_toRightOf="@+id/btn_head_avater"
+	            android:text="@string/login_label_signin"
+	            android:textColor="#FFFFFF"
+	            android:textSize="20sp" />
+
+	    </RelativeLayout>
+	    
+        <ListView 
+            android:id="@android:id/list"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:paddingLeft="@dimen/list_padding"
+		    android:paddingRight="@dimen/list_padding" >
+        </ListView>
+    </LinearLayout>
+    
+    <TextView
+		android:id="@+id/tv_exit"
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="25dp"
+		android:layout_marginBottom="20dp"
+		android:layout_alignParentBottom="true"
+		android:text="@string/text_exit"
+		android:textColor="#000000"
+		android:textSize="20sp" />
+    
+</com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity" >
+
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dip"
+	    android:layout_gravity="center"
+	    android:background="#A0007DFF">
+
+		<TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:text="@string/primary_page"
+		    android:textColor="#ffffff"
+		    android:textSize="20sp" />
+
+	</LinearLayout>
+	
+    <!-- 屏幕上部分整个布局 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+        
+        <!-- 地图布局 -->
+	    <LinearLayout
+	        android:id="@+id/map"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	        
+	        <com.supermap.mapping.MapView
+		        android:id="@+id/Map_view"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent" >
+		    </com.supermap.mapping.MapView>
+	    </LinearLayout>
+	
+	    <!-- 自定义缩放按钮 -->
+	    <Button
+	        android:id="@+id/zoomin"
+	        android:layout_width="35dp"
+	        android:layout_height="45dp"
+	        android:layout_above="@+id/zoomout"
+	        android:layout_alignParentRight="true" 
+	        android:layout_marginRight="5dp"
+	        android:background="@drawable/zoomin_seletor" />
+	    <Button
+	        android:id="@+id/zoomout"
+	        android:layout_width="35dp"
+	        android:layout_height="45dp"
+	        android:layout_above="@+id/thebuttons"
+	        android:layout_alignParentRight="true" 
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginRight="5dp"
+	        android:background="@drawable/zoomout_seletor" />
+
+		<!-- 按钮菜单栏布局 -->
+	    <RelativeLayout
+	         android:id="@+id/thebuttons"
+	         android:layout_width="fill_parent"
+	         android:layout_height="40dp"
+	      	 android:layout_alignParentBottom="true"
+	         android:layout_marginLeft="10dp"
+	         android:layout_marginRight="10dp" >
+	         <LinearLayout
+	             android:id="@+id/linearLayout1"
+	             android:layout_width="fill_parent"
+	             android:layout_height="30dp"
+	             android:orientation="horizontal" 
+	             android:background="@drawable/background_layout">
+	             
+	             <!-- 左边按钮布局 -->
+				<LinearLayout
+					android:id="@+id/button_location"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:layout_marginLeft="1dp"
+					android:layout_marginTop="1dp"
+					android:layout_marginBottom="1dp"
+					android:layout_weight="1"
+					android:background="@drawable/background_bottom2"
+					android:clickable="true"
+					android:orientation="horizontal" >
+	                <!-- 图标1布局 -->
+					<RelativeLayout 
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:layout_weight="1" 
+						android:layout_margin="1dp">
+			            <ImageView
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+					        android:layout_alignParentRight="true"
+					        android:layout_centerVertical="true"
+					        android:src="@drawable/locationimage" />
+	                </RelativeLayout>
+	                <!-- 文字1+分隔线布局 -->    
+	                <RelativeLayout 
+				        android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+				        android:layout_weight="1" 
+	                    android:layout_margin="1dp">
+			             <TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:layout_centerVertical="true" 
+							android:text="@string/text_location"/>
+			             <ImageView 
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+					        android:layout_alignParentRight="true"
+					        android:layout_centerVertical="true" 
+			                android:src="@drawable/line"/>
+	                </RelativeLayout>
+				</LinearLayout>
+	            
+				<!-- 中间按钮布局 -->
+	    		<LinearLayout
+					android:id="@+id/button_upload"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"  
+					android:layout_marginTop="1dp"
+					android:layout_marginBottom="1dp"
+					android:layout_weight="1"
+					android:background="@drawable/background_bottom"
+					android:clickable="true"
+					android:orientation="horizontal" >
+	                <!-- 图标2布局 -->
+					<RelativeLayout 
+				        android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+				        android:layout_weight="1" 
+	                    android:layout_margin="1dp">
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentRight="true"
+							android:layout_centerVertical="true" 
+							android:src="@drawable/show" />
+					</RelativeLayout>
+					<!-- 文字2+分隔线布局 -->
+					<RelativeLayout 
+				        android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+				        android:layout_weight="1"
+	                    android:layout_margin="1dp" >
+			            <TextView
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_centerVertical="true"
+			                android:text="@string/text_upload"/>
+			            <ImageView
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+					        android:layout_alignParentRight="true"
+					        android:layout_centerVertical="true"
+					        android:src="@drawable/line"/>
+					</RelativeLayout>
+				</LinearLayout>
+	             
+	    		<!-- 右边按钮布局 -->
+	    		<LinearLayout
+					android:id="@+id/button_traj"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:layout_marginRight="1dp"
+					android:layout_marginTop="1dp"
+					android:layout_marginBottom="1dp"
+					android:layout_weight="1"
+					android:background="@drawable/background_bottom3"
+					android:clickable="true"
+					android:orientation="horizontal" >
+	                <!-- 图标3布局 -->
+	                 <RelativeLayout
+	                     android:layout_width="fill_parent"
+	                     android:layout_height="fill_parent"
+	                     android:layout_weight="1"
+	                     android:layout_margin="1dp" >
+			             <ImageView
+			                 android:layout_width="wrap_content"
+			                 android:layout_height="wrap_content"
+			                 android:layout_alignParentRight="true"
+			                 android:layout_centerVertical="true" 
+			                 android:src="@drawable/showpic" />
+	                 </RelativeLayout>
+	                 <!-- 文字3布局 -->
+	                 <RelativeLayout 
+	                     android:layout_width="fill_parent"
+	                     android:layout_height="fill_parent"
+	                     android:layout_weight="1"
+	                     android:layout_margin="1dp" >
+			             <TextView
+			                 android:layout_width="wrap_content"
+			                 android:layout_height="wrap_content"
+			                 android:layout_alignParentLeft="true"
+			                 android:layout_centerVertical="true" 
+			                 android:text="@string/text_traj"/>
+					</RelativeLayout>
+				</LinearLayout>
+				
+			</LinearLayout>
+		</RelativeLayout>
+	 
+	</RelativeLayout>
+  
+    <!-- 屏幕下部分整个布局 -->
+ 	<LinearLayout
+ 	    android:id="@+id/imagelayout"
+ 	    android:layout_width="fill_parent"
+        android:layout_height="150dp">
+ 	     
+ 	    <HorizontalScrollView
+		    android:id="@+id/mScrollView"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+	  		android:layout_marginBottom="5dp">
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+				android:layout_height="fill_parent" 
+				android:orientation="horizontal">
+				<GridView 
+				    android:id="@+id/mGridView" 
+				    android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:numColumns = "auto_fit"/>
+			</LinearLayout>
+		</HorizontalScrollView>
+ 	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <declare-styleable name="Gallery1">  
+        <attr name="android:galleryItemBackground" />  
+    </declare-styleable> 
+ 
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <string-array name="nameList">
+        <item>Smile°凉城丶</item>
+        <item>冰依湄凌</item>
+        <item>骑鱼过海的猫</item>
+        <item>penguin</item>
+        <item>月下、残霞</item>
+        <item>曼珠沙华</item>
+        <item>浅墨</item>
+        <item>HuAsHen</item>
+        <item>记忆幻化成了雨</item>
+        <item>二凡男神@</item>
+        <item>谁在沉睡z</item>
+        <item>Demons</item>
+        <item>逃荒　A personゞ</item>
+        <item>陌、微凉ゝ</item>
+        <item>半夏琉璃空</item>
+    </string-array>
+    
+    <string-array name="msgList">
+        <item>最为值得珍惜的是今天，时间的流逝往往是在不经意之间，人生几回，青春更珍贵。</item>
+        <item>在这个把回头看作软弱和耻辱的世界上。走得再远，也终究达不到想要的永远。走得再近，也终究回不到想要的梦境。</item>
+        <item>在前进的程途中，却逐渐树影凄凉，花蝶匿迹，果实无存，最后终于发觉到达一个荒漠。</item>
+        <item>生活中受伤难免，失败跌倒并不可怕，可怕的是因此而一蹶不振，失去了对人生的追求与远大的理想。</item>
+        <item>生命是一条美丽而曲折的幽径，路旁有妍花的丽蝶，累累的美果，但我们很少去停留观赏，或咀嚼它，只一心一意地渴望赶到我们幻想中更加美丽的豁然开朗的大道。</item>
+        <item>时间好比一把锋利的小刀——用的不恰当，会在美丽的面孔上刻下深深的纹路，使旺盛的青春月复一月，年复一年地消磨掉。</item>
+        <item>世上再也没有比时钟更加冷漠的东西了：在您出生的那一刻，在您尽情地摘取青春幻梦的花朵的时刻，它都是同样分秒不差地滴答着。 </item>
+        <item>一阵清风徐来，娇艳鲜嫩的盛期牡丹忽然整朵整朵地坠落，铺散一地绚丽的花瓣。那花瓣落地时依然鲜艳夺目，如同一只奉上祭坛的大鸟脱落的羽毛，低吟着壮烈的悲歌离去。</item>
+        <item>心的本色该是如此。成，如朗月照花，深潭微澜，不论顺逆，不论成败的超然，是扬鞭策马，登高临远的驿站；败，仍滴水穿石，汇流入海，有穷且益坚，不坠青云的傲岸，</item>
+        <item>人永远是一群被内心的遗憾和憧憬所奴役的生物，夹在生命的单行道上，走不远，也回不去。</item>
+        <item>关于少年时代，冷暖自知，最朴素的生活，与最遥远的梦想。</item>
+        <item>没有一个人的前进道路是平平稳稳的，就算是河中穿梭航行的船只也难免颠簸，生活中所遇上的坎坷磨难不是偶尔给予的为难，而是必然所经受的磨练。</item>
+        <item>人自生下那天起就一天天地接近死亡。而到了您在临终前喑哑地呻吟的时候，时钟也还将枯燥而平静地计算着分分秒秒。</item>
+        <item>牡丹没有花谢花败之时，要么烁于枝头，要么归于泥土，它跨越萎顿和衰老，由青春而死亡，由美丽而消遁。</item>
+        <item>荣，江山依旧，风采犹然，恰沧海巫山，熟视岁月如流，浮华万千，不屑过眼烟云；辱，胯下韩信，雪底苍松，宛若羽化之仙，知退一步，海阔天空，不肯因噎废食。</item>
+    </string-array>
+    
+    <string-array name="timeList">
+        <item>18:27</item>
+        <item>17:22</item>
+        <item>15:53</item>
+        <item>15:28</item>
+        <item>11:49</item>
+        <item>9:23</item>
+        <item>昨天</item>
+        <item>昨天</item>
+        <item>昨天</item>
+        <item>昨天</item>
+        <item>星期四</item>
+        <item>星期二</item>
+        <item>2015-08-20</item>
+        <item>2015-08-08</item>
+        <item>2015-07-30</item>
+    </string-array>
+</resources>
